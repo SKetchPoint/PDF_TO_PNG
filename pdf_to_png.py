@@ -1,12 +1,12 @@
 import os
 from pdf2image import convert_from_path
-#Look to the README for what needs to be on your computer, really only two things you may need to install 
+# Look to the README for what needs to be on your computer, really only two things you may need to install 
 def convert_pdfs_in_folder(folder_path=".", dpi=150):
     # Scan folder for PDF files, please dont do this without cd TuT
     files = [f for f in os.listdir(folder_path) if f.lower().endswith('.pdf')]
     
     if not files:
-        #Did you navagate to the correct directory? to the correct folder? make sure you do!
+        # Did you navagate to the correct directory? to the correct folder? make sure you do!
         print("No PDF files found in the directory.")
         return
 
